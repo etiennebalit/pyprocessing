@@ -1,0 +1,26 @@
+#summary What a typical *pyprocessing* application looks like
+#labels Phase-Design
+
+= A simple application =
+
+Since *pyprocessing* is not a full fledged IDE but merely a Python package, it must be imported at the beginning of your application: 
+
+{{{
+from pyprocessing import *
+}}}
+
+After the import, a default 100x100 pixel window is defined, on which the application may now draw using pyprocessing functions and regular Python code. For instance:
+
+{{{
+smooth()
+for i in range(10):
+    line(i*5+5,20,i*5+50,80)
+}}}
+
+The last instruction should be a call to the `run()` function: 
+
+{{{
+run()
+}}}
+
+This will finally exhibit the window (which was hidden until this point) and enter the event dispatching loop.
