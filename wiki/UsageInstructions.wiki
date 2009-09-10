@@ -1,15 +1,19 @@
-#summary What a typical *pyprocessing* application looks like
-#labels Phase-Design
+#summary What a typical pyprocessing application looks like
 
-= A simple application =
+= Writing a pyprocessing application =
 
-Since *pyprocessing* is not a full fledged IDE but merely a Python package, it must be imported at the beginning of your application: 
+== Simple usage ==
+
+Unlike [http://www.processing.org Processing], *pyprocessing* is not a full fledged IDE but 
+merely a Python package. Thus, you must use your favorite text editor or Python 
+IDE to write a regular Python program which imports the pyprocessing package. We suggest
+doing it at the beginning of your application: 
 
 {{{
 from pyprocessing import *
 }}}
 
-After the import, a default 100x100 pixel window is defined, on which the application may now draw using pyprocessing functions and regular Python code. For instance:
+After the import, a default 100x100 pixel window is defined, on which the application may now draw using pyprocessing functions and other Python commands. For instance:
 
 {{{
 smooth()
@@ -23,15 +27,20 @@ The last instruction should be a call to the `run()` function:
 run()
 }}}
 
-This will finally exhibit the window (which was hidden until this point) and enter the event dispatching loop.
+This will finally show the window (which was hidden until this point) and the application
+will enter the event dispatching loop. In principle, `run()` does not return, but
+you can terminate the application by typing the `ESC` key.
 
 In case you're wondering, here's the complete script and the contents of the drawing:
 
 <table>
 <tr>
 <td>
-http://code.google.com/p/pyprocessing/wiki/UsageInstructions.figs/basicusage.png
+
+http://pyprocessing.googlecode.com/svn/wiki/UsageInstructions.figs/basicusage.png
+
 </td>
+<td>
 {{{
 from pyprocessing import *
 
@@ -41,5 +50,40 @@ for i in range(10):
 
 run()
 }}}
+</td>
 </tr>
 </table>
+
+== Changing the default window ==
+
+As with Processing, the window size may be changed with the `size()` function.
+It has two required arguments: the width and height of the desired window in
+pixels. Thus,
+{{{
+size(200,200)
+}}}
+will open a 200x200 pixels window.
+
+By default, pyprocessing windows are not resizable, since this is the
+expected Processing behavior. You can, however, request a resizable window by
+adding the keyword argument `resizable=True`:
+{{{
+size(200,200,resizable=True)
+}}}
+It is even possible to request a full screen window by using the keyword argument
+`fullscreen=True`.
+
+Pyprocessing will adjust the coordinate system to reflect the changed window 
+dimensions. Thus, if the window is resized so that it is now 250 pixels wide
+and 150 pixels high, the pixels will be addressed by _x_ in interval [0, 250) and
+_y_ in interval [0, 150), where pixel (0,0) is the top left corner of
+the window, i.e., the _y_ axis points _down_. 
+
+Of course, if the window is resized, the original contents drawn so far will
+be lost, and pyprocessing will automatically call the `draw()` function
+you defined in your program, if any (see the next section).
+
+ 
+== Animation and interaction==
+
+
