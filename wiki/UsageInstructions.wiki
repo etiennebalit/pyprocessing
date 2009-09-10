@@ -24,3 +24,22 @@ run()
 }}}
 
 This will finally exhibit the window (which was hidden until this point) and enter the event dispatching loop.
+
+In case you're wondering, here's the complete script and the contents of the drawing:
+
+<table>
+<tr>
+<td>
+http://code.google.com/p/pyprocessing/wiki/UsageInstructions.figs/basicusage.png
+</td>
+{{{
+from pyprocessing import *
+
+smooth()
+for i in range(10):
+    line(i*5+5,20,i*5+50,80)
+
+run()
+}}}
+</tr>
+</table>
