@@ -2,9 +2,11 @@
 
 = Writing a pyprocessing application =
 
+Pyprocessing works in much the same fashion as [http://www.processing.org Processing]. In fact, most functions in pyprocessing mimic the equivalent Processing functions to the letter. If you are familiar with Processing and Python, you already know almost everything you need to write pyprocessing applications. To cut a long story short, the only thing you need to do is to _import_ the pyprocessing package, write the rest of your code using pyprocessing functions and data structures, and call `run()`.
+
 == Simple usage ==
 
-Unlike [http://www.processing.org Processing], *pyprocessing* is not a full fledged IDE but 
+Unlike [http://www.processing.org Processing], pyprocessing is not a full fledged IDE but 
 merely a Python package. Thus, you must use your favorite text editor or Python 
 IDE to write a regular Python program which imports the pyprocessing package. We suggest
 doing it at the beginning of your application: 
@@ -84,6 +86,8 @@ be lost, and pyprocessing will automatically call the `draw()` function
 you defined in your program, if any (see the next section).
 
  
-== Animation and interaction==
+== Animation ==
 
+In order to do animations or to deal with resizing windows, the application must define a callback function called `draw()`. By default, `draw()` is called continuously 60 times per second. 
 
+Pyprocessing also supports the `setup()` callback convention, i.e., if you define a function called `setup()`, it will be called exactly once by `run()`. Notice that in Processing, so called _static_ programs -- or _sketches_ in Processing parlance -- do not define any functions (callbacks or otherwise), while the initialization of a program with a `draw()` is almost always performed by `setup()`. On the other hand, pyprocessing is less strict, i.e., you can put initialization code inside a `setup()` function or directly in the main program regardless of whether a `draw()` callback function was defined or not.
