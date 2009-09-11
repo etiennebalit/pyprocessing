@@ -90,4 +90,47 @@ you defined in your program, if any (see the next section).
 
 In order to do animations or to deal with resizing windows, the application must define a callback function called `draw()`. By default, `draw()` is called continuously 60 times per second. 
 
-Pyprocessing also supports the `setup()` callback convention, i.e., if you define a function called `setup()`, it will be called exactly once by `run()`. Notice that in Processing, so called _static_ programs -- or _sketches_ in Processing parlance -- do not define any functions (callbacks or otherwise), while the initialization of a program with a `draw()` is almost always performed by `setup()`. On the other hand, pyprocessing is less strict, i.e., you can put initialization code inside a `setup()` function or directly in the main program regardless of whether a `draw()` callback function was defined or not.
+Pyprocessing also supports the `setup()` callback convention, i.e., if you define a function called `setup()`, it will be called exactly once by `run()`. Notice that in Processing, so called _static_ programs -- or _sketches_ in Processing parlance -- do not define any functions (callbacks or otherwise), while the initialization of a program with a `draw()` is almost always performed by `setup()`. On the other hand, pyprocessing is less strict, i.e., you can put initialization code inside a `setup()` function or directly in the main program regardless of whether a `draw()` callback function was defined or not. 
+
+In the example below, which implements an animation with two balls, `setup()` is automatically called once to initialize the screen and some drawing modes, whereas `draw()` is called repeatedly to update the `balls` array and draw the frame.
+
+<table>
+<tr>
+<td>
+
+http://pyprocessing.googlecode.com/svn/wiki/UsageInstructions.figs/animation001.png
+
+http://pyprocessing.googlecode.com/svn/wiki/UsageInstructions.figs/animation004.png
+
+http://pyprocessing.googlecode.com/svn/wiki/UsageInstructions.figs/animation007.png
+
+</td>
+<td>
+{{{
+from pyprocessing import *
+
+balls = [(20,20,2.5,3,10),(100,50,-3.5,-3,15)]
+
+def setup():
+    size(150,150)
+    ellipseMode(CENTER)
+    noStroke()
+
+def draw():
+    fill(200,50)
+    rect(0,0,150,150)
+    fill(0)
+    for i in range(len(balls)):
+        x,y,dx,dy,r = balls[i]
+        x += dx
+        if constrain(x,r,150-r) != x: dx = -dx
+        y += dy
+        if constrain(y,r,150-r) != y: dy = -dy
+        balls[i] = x,y,dx,dy,r
+        ellipse(x,y,r,r)
+
+run()
+}}}
+</td>
+</tr>
+</table>
