@@ -1,4 +1,4 @@
-#summary What a typical pyprocessing application looks like
+#summary Basic information about how to write a pyprocessing application
 
 = Writing a pyprocessing application =
 
@@ -29,7 +29,7 @@ The last instruction should be a call to the `run()` function:
 run()
 }}}
 
-This will finally show the window (which was hidden until this point) and the application
+When this line is reached, the graphics window which was hidden until this point, will finally be shown and the application
 will enter the event dispatching loop. In principle, `run()` does not return, but
 you can terminate the application by typing the `ESC` key.
 
@@ -134,3 +134,46 @@ run()
 </td>
 </tr>
 </table>
+
+== Interaction ==
+
+An interactive application must process user input such as mouse clicks or keyboard typing. Again, following Processing's practice, the state of input devices is kept in _global_ variables which can either be polled in your `draw()` function or queried only when their value changes by means of callback functions. 
+
+The example program shown below illustrates a simple scribbling application where dragging the mouse paints freehand lines and hitting the 'C' key clears the screen.
+
+{{{
+from pyprocessing import *
+
+size(200,200)
+
+def draw():
+    # scribble a line with the mouse
+    if mouse.pressed:
+        line (pmouse.x, pmouse.y, mouse.x, mouse.y)
+    # typing 'C' clears the screen
+    if key.pressed and key.char.lower() == 'c':
+        background(200)
+
+run()
+}}}
+
+The same application can be rewritten in a more efficient manner by using callback functions:
+
+{{{
+from pyprocessing import *
+
+size(200,200)
+
+def mouseDragged():
+    # scribble a line with the mouse
+    line (pmouse.x, pmouse.y, mouse.x, mouse.y)
+    
+def keyPressed():
+    # typing 'C' clears the screen
+    if key.char in 'cC':
+        background(200)
+
+run()
+}}}
+
+Due to the characteristics of the Python language, pyprocessing uses a slightly different naming for these state variables than the one used by Processing. For instance, whereas Processing uses boolean variable `mousePressed` to record whether or not a mouse button is pressed, the equivalent variable in pyprocessing is named `mouse.pressed`. The reason for this is that Java -- the actual programming language that underlies Processing -- allows identifiers to be overloaded and thus it is perfectly alright to have a variable named `mousePressed` and a function called `mousePressed()` while in Python this is not allowed.
