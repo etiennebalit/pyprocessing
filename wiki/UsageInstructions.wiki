@@ -141,6 +141,12 @@ An interactive application must process user input such as mouse clicks or keybo
 
 The example program shown below illustrates a simple scribbling application where dragging the mouse paints freehand lines and hitting the 'C' key clears the screen.
 
+<table>
+<tr>
+<td>
+http://pyprocessing.googlecode.com/svn/wiki/UsageInstructions.figs/interactioncallback001.png
+</td>
+<td>
 {{{
 from pyprocessing import *
 
@@ -151,11 +157,14 @@ def draw():
     if mouse.pressed:
         line (pmouse.x, pmouse.y, mouse.x, mouse.y)
     # typing 'C' clears the screen
-    if key.pressed and key.char.lower() == 'c':
+    if key.pressed and key.char in 'cC':
         background(200)
 
 run()
 }}}
+</td>
+</tr>
+</table>
 
 The same application can be rewritten in a more efficient manner by using callback functions:
 
@@ -176,4 +185,6 @@ def keyPressed():
 run()
 }}}
 
-Due to the characteristics of the Python language, pyprocessing uses a slightly different naming for these state variables than the one used by Processing. For instance, whereas Processing uses boolean variable `mousePressed` to record whether or not a mouse button is pressed, the equivalent variable in pyprocessing is named `mouse.pressed`. The reason for this is that Java -- the actual programming language that underlies Processing -- allows identifiers to be overloaded and thus it is perfectly alright to have a variable named `mousePressed` and a function called `mousePressed()` while in Python this is not allowed.
+===A note about state variables===
+
+Due to the characteristics of the Python language, pyprocessing uses a naming for state variables that is slightly different from the one used by Processing. For instance, whereas Processing uses the boolean variable `mousePressed` to record whether or not a mouse button is pressed, the equivalent variable in pyprocessing is named `mouse.pressed`. The reason for this is that Java -- the actual programming language that underlies Processing -- allows identifiers to be overloaded and thus it is perfectly alright to have a variable named `mousePressed` and a function called `mousePressed()` while in Python this is not allowed.
