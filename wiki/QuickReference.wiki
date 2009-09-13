@@ -9,8 +9,8 @@
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/cursor_.html">cursor()</a></td>
-      <td>N/A</td>
-      <td></td>
+      <td>`cursor()`</td>
+      <td>Changes or shows the mouse cursor.</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/focused.html">focused</a></td>
@@ -34,12 +34,12 @@
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/height.html">height</a></td>
-      <td>`screen.height`</td>
-      <td>Height of the current window in pixels.</td>
+      <td>`canvas.height`</td>
+      <td>Height of the drawing window in pixels.</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/noCursor_.html">noCursor()</a></td>
-      <td>N/A</td>
+      <td>`noCursor()`</td>
       <td>Inhibits the display of the mouse cursor.</td>
     </tr>
     <tr>
@@ -49,12 +49,12 @@
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/screen.html">screen</a></td>
-      <td>N/A</td>
-      <td></td>
+      <td>`screen`</td>
+      <td>holds the width and height of the display.</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/width.html">width</a></td>
-      <td>`screen.width`</td>
-      <td></td>
+      <td>`canvas.width`</td>
+      <td>width of the drawing window in pixels</td>
     </tr>
 </table>
