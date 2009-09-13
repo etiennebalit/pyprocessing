@@ -47,6 +47,59 @@
     </tr>
 </table>
 
+== _Curves_ ==
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tr>
+      <td><a href="http://www.processing.org/reference/bezier_.html">bezier()</a></td>
+      <td>`bezier()`</td>
+      <td> Draws a cubic Bézier curve</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/bezierDetail_.html">bezierDetail()</a></td>
+      <td>`bezierDetail()`</td>
+      <td> Changes sampling rate of Bézier curves</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/bezierPoint_.html">bezierPoint()</a></td>
+      <td>`bezierPoint()`</td>
+      <td> Evaluates one coordinate of a point on a Bézier curve</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/bezierTangent_.html">bezierTangent()</a></td>
+      <td>`bezierTangent()`</td>
+      <td> Evaluates one coordinate of a tangent of a
+Bézier curve</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/curve_.html">curve()</a></td>
+      <td>`curve()`</td>
+      <td> Draws a cubic Catmull-Rom curve</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/curveDetail_.html">curveDetail()</a></td>
+      <td>`curveDetail()`</td>
+      <td> Changes the sampling rate of Catmull-Rom curves</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/curvePoint_.html">curvePoint()</a></td>
+      <td>`curvePoint()`</td>
+      <td> Evaluates one coordinate of a point of
+a Catmull-Rom curve</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/curveTangent_.html">curveTangent()</a></td>
+      <td>`curveTangent()`</td>
+      <td> Evaluates one coordinate of a tangent of
+a Catmull-Rom curve</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/curveTightness_.html">curveTightness()</a>
+</td>
+      <td> `curveTightness()`</td>
+      <td> Changes the tightness of Catmull-Rom curves</td>
+    </tr>
+</table>
 
 <br>
 
