@@ -1,11 +1,62 @@
 #summary Pyprocessing Quick Reference
 
-= Environment =
+=Shape=
+
+==_2D Primitives_==
+
 <table border="1" cellpadding="2" cellspacing="0">
     <tr>
       <td>*Processing* </td>
       <td>*pyprocessing*</td>
-      <td>*Usage*</td>
+      <td>*semantics*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/arc_.html">arc()</a></td>
+      <td>`arc()`</td>
+      <td>draws an arc of ellipse</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/ellipse_.html">ellipse()</a></td>
+      <td>`ellipse()`</td>
+      <td>draws an ellipse</td>
+    </tr>
+    <tr>
+      <td><a  href="http://www.processing.org/reference/line_.html">line()</a></td>
+      <td>`line()`</td>
+      <td>draws a line segment</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/point_.html">point()</a></td>
+      <td>`point()`</td>
+      <td>draws a point</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/quad_.html">quad()</a></td>
+      <td>`quad()`</td>
+      <td>draws a quadrilateral</td>
+    </tr>
+    <tr>
+      <td><a  href="http://www.processing.org/reference/rect_.html">rect()</a></td>
+      <td>`rect()`</td>
+      <td>draws a rectangle</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/triangle_.html">triangle()</a></td>
+      <td>`triangle()`</td>
+      <td>draws a triangle</td>
+    </tr>
+</table>
+
+
+<br>
+
+= Environment =
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tr>
+      <td>*Processing* </td>
+      <td>*pyprocessing*</td>
+      <td>*Semantics*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/cursor_.html">cursor()</a></td>
