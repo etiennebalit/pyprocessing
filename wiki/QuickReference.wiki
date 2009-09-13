@@ -1,5 +1,8 @@
 #summary Pyprocessing Quick Reference
 
+=NOTE=
+This is still very incomplete! Browsing the reference examples in the repository will give you a more up-to-date picture of pyprocessing features. 
+
 =Shape=
 
 ==_2D Primitives_==
