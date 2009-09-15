@@ -7,11 +7,11 @@ This is still very incomplete! Browsing the reference examples in the repository
 
 ==_2D Primitives_==
 
-<table border="1" cellpadding="2" cellspacing="0">
+<table border="0" cellpadding="2" cellspacing="0" width="500px">
     <tr>
-      <td>*Processing* </td>
-      <td>*pyprocessing*</td>
-      <td>*semantics*</td>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="300">*Description*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/arc_.html">arc()</a></td>
@@ -50,9 +50,40 @@ This is still very incomplete! Browsing the reference examples in the repository
     </tr>
 </table>
 
+==_3D Primitives_==
+<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="300">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/box_.html">box()</a></td>
+      <td>`box()`</td>
+      <td>draws a parallelepiped</td>
+    </tr>
+    <tr>
+      <td><a  href="http://www.processing.org/reference/sphere_.html">sphere()</a></td>
+      <td>`sphere()`</td>
+      <td>draws a sphere</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/sphereDetail_.html">sphereDetail()</a></td>
+      <td>`sphereDetail()`</td>
+      <td>sets the level of detail used to render spheres</td>
+    </tr>
+  </tbody>
+</table>
+
 == _Curves_ ==
 
-<table border="1" cellpadding="2" cellspacing="0">
+<table border="0" cellpadding="2" cellspacing="0" width="500px">
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="300">*Description*</td>
+    </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/bezier_.html">bezier()</a></td>
       <td>`bezier()`</td>
@@ -104,15 +135,97 @@ a Catmull-Rom curve</td>
     </tr>
 </table>
 
+==_Attributes_==
+<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="300">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noSmooth_.html">noSmooth()</a></td>
+      <td> `noSmooth()`</td>
+      <td>renders in non-antialiased mode</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/rectMode_.html">rectMode()</a></td>
+      <td> `rectMode()`</td>
+      <td> changes the semantics of the arguments of `rect()`</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/smooth_.html">smooth()</a></td>
+      <td> `smooth()`</td>
+      <td> renders in antialiased mode</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/strokeCap_.html">strokeCap()</a></td>
+      <td> N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/strokeJoin_.html">strokeJoin()</a></td>
+      <td> N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/strokeWeight_.html">strokeWeight()</a></td>
+      <td>`strokeWeight()`</td>
+      <td>changes the thickness of lines</td>
+    </tr>
+  </tbody>
+</table>
+
+==_Vertex_==
+<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="300">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/bezierVertex_.html">bezierVertex()</a></td>
+      <td> `bezierVertex()`</td>
+      <td> adds a Bézier arc to the shape</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/curveVertex_.html">curveVertex()</a></td>
+      <td> `curveVertex()`</td>
+      <td> adds a Catmull-Rom arc to the shape</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/endShape_.html">endShape()</a></td>
+      <td> `endVertex()`</td>
+      <td> finishes the shape</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/texture_.html">texture()</a></td>
+      <td> N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/textureMode_.html">textureMode()</a></td>
+      <td> N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/vertex_.html">vertex()</a></td>
+      <td>`vertex()`</td>
+      <td> adds a vertex to the shape</td>
+    </tr>
+  </tbody>
+</table>
+
 <br>
 
 = Environment =
 
-<table border="1" cellpadding="2" cellspacing="0">
+<table border="0" cellpadding="2" cellspacing="0" width="500px">
     <tr>
-      <td>*Processing* </td>
-      <td>*pyprocessing*</td>
-      <td>*Semantics*</td>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="300">*Description*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/cursor_.html">cursor()</a></td>
