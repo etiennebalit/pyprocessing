@@ -1,7 +1,25 @@
 #summary Pyprocessing Quick Reference
 
-=NOTE=
-This is still very incomplete! Browsing the reference examples in the repository will give you a more up-to-date picture of pyprocessing features. 
+<wiki:toc max_depth="2" />
+
+=Introduction=
+You will find below a short (and I mean _short_) summary of the functions and variables
+defined by pyprocessing. Each entry contains a Processing feature
+with a link to the reference page of that feature in the Processing site, the pyprocessing
+equivalent, if any, and a brief description of that feature. 
+
+As a rule,
+pyprocessing functions have exactly the same name of their Processing counterparts,
+and allow the same argument variations. On the other hand, global variables
+necessarily have to follow a different naming convention in pyprocessing. When a
+global variable names in Processing is a composite word, the corresponding
+pyprocessing name is the first word followed by the remaining words in lowercase.
+For instance, Processing's `mouseX` variable is called `mouse.x` in pyprocessing. 
+The notable exceptions are `width` and `height`, which are called `canvas.width`
+and `canvas.height`, and `key`, which is equivalent to `key.char` in pyprocessing.
+
+This is still incomplete! Browsing the examples in the repository 
+will give you a more up-to-date picture of pyprocessing's features. 
 
 =Structure=
 
@@ -68,6 +86,7 @@ automatically once by run()</td>
   </tbody>
 </table>
 <br>
+
 = Environment =
 
 <table border="0" cellpadding="2" cellspacing="0" width="600px">
@@ -127,8 +146,113 @@ automatically once by run()</td>
       <td>width of the drawing window in pixels</td>
     </tr>
 </table>
-
 <br>
+
+=Color=
+==_Setting_==
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+ <tbody>
+     <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+ 
+    <tr>
+      <td><a href="http://www.processing.org/reference/background_.html">background()</a></td>
+      <td> `background()`</td>
+      <td> clears the drawing with a background color</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/colorMode_.html">colorMode()</a></td>
+      <td> `colorMode()`</td>
+      <td> sets up the color system (RGB or HSB) for specifying
+colors</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/fill_.html">fill()</a></td>
+      <td> `fill()`</td>
+      <td> specifies the color for drawing filled shapes</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noFill_.html">noFill()</a></td>
+      <td> `noFill()`</td>
+      <td> makes shapes be rendered non-filled</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noStroke_.html">noStroke()</a></td>
+      <td> `noStroke()`</td>
+      <td> makes shapes be rendered without their borders</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/stroke_.html">stroke()</a></td>
+      <td> `stroke()`</td>
+      <td> specifies the color for drawing lines and shape borders</td>
+    </tr>
+  </tbody>
+</table>
+==_Creating & Reading_==
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+ <tbody>
+     <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+     <tr>
+      <td><a href="http://www.processing.org/reference/alpha_.html">alpha()</a></td>
+      <td> `alpha()`</td>
+      <td> returns the alpha (transparency) component of a color</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/blendColor_.html">blendColor()</a></td>
+      <td> `blendColor()`</td>
+      <td> returns the blending between two colors</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/blue_.html">blue()</a></td>
+      <td> `blue()`</td>
+      <td> returns the blue component of a color</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/brightness_.html">brightness()</a></td>
+      <td>`brightness()`</td>
+      <td> returns the brightness of a color</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/color_.html">color()</a></td>
+      <td> `color()`</td>
+      <td> builds a color value from its components</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/green_.html">green()</a></td>
+      <td>`green()`</td>
+      <td> returns the green component of a color</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/hue_.html">hue()</a></td>
+      <td> `hue()`</td>
+      <td> returns the hue of a color</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/lerpColor_.html">lerpColor()</a></td>
+      <td> `lerpColor()`</td>
+      <td> returns a linear interpolation between two colors</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/red_.html">red()</a></td>
+      <td> `red()`</td>
+      <td> returns the red component of a color</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/saturation_.html">saturation()</a></td>
+      <td> `saturation()`</td>
+      <td> returns the saturation of a color</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
 =Shape=
 ==_2D Primitives_==
 
@@ -227,8 +351,7 @@ automatically once by run()</td>
     <tr>
       <td><a href="http://www.processing.org/reference/bezierTangent_.html">bezierTangent()</a></td>
       <td>`bezierTangent()`</td>
-      <td> Evaluates one coordinate of a tangent of a
-Bézier curve</td>
+      <td> Evaluates one coordinate of a tangent of a Bézier curve</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/curve_.html">curve()</a></td>
@@ -373,7 +496,7 @@ a Catmull-Rom curve</td>
     <tr>
       <td><a href="http://www.processing.org/reference/mouseMoved_.html">mouseMoved()</a></td>
       <td> `mouseMoved()`</td>
-      <td>called when a mouse is moved with no pressed buttons</td>
+      <td>called when a mouse is moved with buttons pressed</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/mousePressed_.html">mousePressed()</a></td>
@@ -455,5 +578,271 @@ a Catmull-Rom curve</td>
     </tr>
   </tbody>
 </table>
-
 <br>
+
+=Transform=
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/applyMatrix_.html">applyMatrix()</a></td>
+      <td> `applyMatrix()`</td>
+      <td> multiplies the current transformation matrix by a
+given matrix</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/popMatrix_.html">popMatrix()</a></td>
+      <td> `popMatrix()`</td>
+      <td> discards the current (top) matrix from the
+transformation matrix stack</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/printMatrix_.html">printMatrix()</a></td>
+      <td> `printMatrix()`</td>
+      <td> prints the current transformation matrix</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/pushMatrix_.html">pushMatrix()</a></td>
+      <td> `pushMatrix()`</td>
+      <td> pushes a copy of the current matrix onto the
+transformation matrix stack</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/resetMatrix_.html">resetMatrix()</a></td>
+      <td> `resetMatrix()`</td>
+      <td> sets an identity matrix as the the current
+transformation matrix</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/rotate_.html">rotate()</a></td>
+      <td> `rotate()`</td>
+      <td> rotates around a given axis</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/rotateX_.html">rotateX()</a></td>
+      <td> `rotateX()`</td>
+      <td> rotates around the _x_ axis</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/rotateY_.html">rotateY()</a></td>
+      <td> `rotateY()`</td>
+      <td> rotates around the _y_ axis</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/rotateZ_.html">rotateZ()</a></td>
+      <td> `rotateZ()`</td>
+      <td> rotates around the _z_ axis</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/scale_.html">scale()</a></td>
+      <td> `scale()`</td>
+      <td> performs a scale transformation</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/translate_.html">translate()</a></td>
+      <td> `translate()`</td>
+      <td> performs a translation transformation</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+=Lights, Camera=
+==_Lights_==
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/ambientLight_.html">ambientLight()</a></td>
+      <td>`ambientLight()`</td>
+      <td>adds an ambient light source</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/directionalLight_.html">directionalLight()</a></td>
+      <td>`directionalLight`</td>
+      <td> adds a directional light source</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/lightFalloff_.html">lightFalloff()</a></td>
+      <td>`lightFalloff()`</td>
+      <td>sets attenuation factors for next light sources</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/lightSpecular_.html">lightSpecular()</a></td>
+      <td>`lightSpecular()`</td>
+      <td>sets specular coefficients for next light sources</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/lights_.html">lights()</a></td>
+      <td>`lights()`</td>
+      <td> turns on lighting and default light sources</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noLights_.html">noLights()</a></td>
+      <td>`noLights()`</td>
+      <td> turns off lighting</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/normal_.html">normal()</a></td>
+      <td>`normal()`</td>
+      <td> sets the normal vector for subsequent vertices</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/pointLight_.html">pointLight()</a></td>
+      <td>`pointLight()`</td>
+      <td>adds a point light source</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/spotLight_.html">spotLight()</a></td>
+      <td>`spotLight()`</td>
+      <td> adds a spot light source</td>
+    </tr>
+  </tbody>
+</table>
+
+==_Camera_==
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/beginCamera_.html">beginCamera()</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/camera_.html">camera()</a></td>
+      <td>`camera()`</td>
+      <td>sets the camera transformation</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/endCamera_.html">endCamera()</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/frustum_.html">frustum()</a></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/ortho_.html">ortho()</a></td>
+      <td>`ortho()`</td>
+      <td> sets an orthogonal projection</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/perspective_.html">perspective()</a></td>
+      <td>`perspective()`</td>
+      <td> sets a perspective projection</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/printCamera_.html">printCamera()</a></td>
+      <td>`printCamera()`</td>
+      <td> prints the current transformation matrix</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/printProjection_.html">printProjection()</a></td>
+      <td>`printProjection()`</td>
+      <td> prints the current projection matrix</td>
+    </tr>
+  </tbody>
+</table>
+
+==_Coordinates_==
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/modelX_.html">modelX()</a></td>
+      <td>`modelX()`</td>
+      <td> returns the screen _x_ coordinate of given object
+coordinates</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/modelY_.html">modelY()</a></td>
+      <td>`modelY()`</td>
+      <td>returns the screen _y_ coordinate of given object
+coordinates</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/modelZ_.html">modelZ()</a></td>
+      <td>`modelZ()`</td>
+      <td>returns the screen _z_ coordinate of given object
+coordinates</td>
+    </tr>
+    <tr>
+      <td><span style="text-decoration: underline;"></span>N/A</td>
+      <td>`modelXYZ()`</td>
+      <td> returns the screen coordinates of given object
+coordinates</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/screenX_.html">screenX()</a></td>
+      <td>`screenX()`</td>
+      <td>returns the screen _x_ coordinate of given object
+coordinates</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/screenY_.html">screenY()</a></td>
+      <td>`screenY()`</td>
+      <td>returns the screen _y_ coordinate of given object
+coordinates</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/screenZ_.html">screenZ()</a></td>
+      <td>`screenY()`</td>
+      <td>returns the screen _z_ coordinate of given object
+coordinates</td>
+    </tr>
+    <tr>
+      <td><span style="text-decoration: underline;"></span>N/A</td>
+      <td>`screenXYZ()`</td>
+      <td> returns the screen coordinates of given object
+coordinates</td>
+    </tr>
+  </tbody>
+</table>
+
+==_Material Properties_==
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/ambient_.html">ambient()</a></td>
+      <td>`ambient()`</td>
+      <td> sets the ambient properties of the next vertices</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/emissive_.html">emissive()</a></td>
+      <td>`emissive()`</td>
+      <td> sets the emissive properties of the next vertices</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/shininess_.html">shininess()</a></td>
+      <td>`shininess()`</td>
+      <td> sets the shininess property of the next vertices</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/specular_.html">specular()</a></td>
+      <td>`specular()`</td>
+      <td> sets the specular properties of the next vertices</td>
+    </tr>
+  </tbody>
+</table>
+
