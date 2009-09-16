@@ -343,3 +343,117 @@ a Catmull-Rom curve</td>
 </table>
 
 <br>
+
+=Input=
+
+==_Mouse_==
+
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mouseButton.html">mouseButton</a></td>
+      <td> `mouse.button`</td>
+      <td> tells what mouse button is pressed.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mouseClicked_.html">mouseClicked()</a></td>
+      <td> `mouseClicked()`</td>
+      <td> called when a mouse button is pressed and released</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mouseDragged_.html">mouseDragged()</a></td>
+      <td> `mouseDragged()`</td>
+      <td>called when a mouse is dragged with a pressed button</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mouseMoved_.html">mouseMoved()</a></td>
+      <td> `mouseMoved()`</td>
+      <td>called when a mouse is moved with no pressed buttons</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mousePressed_.html">mousePressed()</a></td>
+      <td> `mousePressed()`</td>
+      <td> called when a mouse button is pressed</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mousePressed.html">mousePressed</a></td>
+      <td> `mouse.pressed`</td>
+      <td> tells whether a mouse button is pressed</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mouseReleased_.html">mouseReleased()</a></td>
+      <td> `mouseReleased()`</td>
+      <td> called when a mouse button is released</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mouseX.html">mouseX</a></td>
+      <td> `mouse.x`</td>
+      <td> current _x_ position of the mouse</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mouseY.html">mouseY</a></td>
+      <td> `mouse.y`</td>
+      <td> current _y_ position of the mouse</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/pmouseX.html">pmouseX</a></td>
+      <td>`pmouse.x`</td>
+      <td> previous _x_ position of the mouse</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/pmouseY.html">pmouseY</a></td>
+      <td>`pmouse.y`</td>
+      <td> previous _y_ position of the mouse
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+==_Keyboard_==
+
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/key.html">key</a></td>
+      <td> `key.char`</td>
+      <td> holds the char value of the most recently pressed key</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/keyCode.html">keyCode</a></td>
+      <td> `key.code`</td>
+      <td> holds an int code of the most recently pressed key</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/keyPressed_.html">keyPressed()</a></td>
+      <td> `keyPressed()`</td>
+      <td> called when a key is pressed</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/keyPressed.html">keyPressed</a></td>
+      <td> `key.pressed()`</td>
+      <td> tells whether a key is pressed</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/keyReleased_.html">keyReleased()</a></td>
+      <td> `keyReleased()`</td>
+      <td> called when a key is released</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/keyTyped_.html">keyTyped()</a></td>
+      <td> `keyTyped()`</td>
+      <td> called when a non-code key is pressed</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
