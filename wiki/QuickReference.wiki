@@ -3,15 +3,140 @@
 =NOTE=
 This is still very incomplete! Browsing the reference examples in the repository will give you a more up-to-date picture of pyprocessing features. 
 
-=Shape=
+=Structure=
 
-==_2D Primitives_==
-
-<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
     <tr>
       <td width="100">*Processing* </td>
       <td width="100">*pyprocessing*</td>
-      <td width="300">*Description*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/draw_.html">draw()</a></td>
+      <td> `draw()`</td>
+      <td> a function of your program that is called for drawing
+a frame</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/exit_.html">exit()</a></td>
+      <td> `exit()`</td>
+      <td> exits the application</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/loop_.html">loop()</a></td>
+      <td> `loop()`</td>
+      <td> makes `draw()` be called periodically</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noLoop_.html">noLoop()</a></td>
+      <td> `noLoop()`</td>
+      <td> stops `draw()` fro being called periodically</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/popStyle_.html">popStyle()</a></td>
+      <td> N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/pushStyle_.html">pushStyle()</a></td>
+      <td> N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/redraw_.html">redraw()</a></td>
+      <td> `redraw`</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td> `run()`</td>
+      <td> your program should call this to map the drawing
+window and start the event loop</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/setup_.html">setup()</a></td>
+      <td> `setup()`</td>
+      <td> a function of your program that is called
+automatically once by run()</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/size_.html">size()</a></td>
+      <td> `size()`</td>
+      <td> used to establish the dimensions of the drawing window</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+= Environment =
+
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/cursor_.html">cursor()</a></td>
+      <td>`cursor()`</td>
+      <td>Changes or shows the mouse cursor.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/focused.html">focused</a></td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a  href="http://www.processing.org/reference/frameCount.html"> frameCount</a></td>
+      <td>`frame.count`</td>
+      <td>Number of frames drawn so far.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/frameRate_.html">frameRate()</a></td>
+      <td>`frameRate()`</td>
+      <td>Sets the number of times `draw()` will be called per second.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/frameRate.html">frameRate</a></td>
+      <td>`frame.rate`</td>
+      <td>Estimated number of frames per second for the recent past.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/height.html">height</a></td>
+      <td>`canvas.height`</td>
+      <td>Height of the drawing window in pixels.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noCursor_.html">noCursor()</a></td>
+      <td>`noCursor()`</td>
+      <td>Inhibits the display of the mouse cursor.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/online.html">online</a></td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/screen.html">screen</a></td>
+      <td>`screen`</td>
+      <td>holds the width and height of the display.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/width.html">width</a></td>
+      <td>`canvas.width`</td>
+      <td>width of the drawing window in pixels</td>
+    </tr>
+</table>
+
+<br>
+=Shape=
+==_2D Primitives_==
+
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/arc_.html">arc()</a></td>
@@ -51,12 +176,12 @@ This is still very incomplete! Browsing the reference examples in the repository
 </table>
 
 ==_3D Primitives_==
-<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
 <tbody>
     <tr>
       <td width="100">*Processing* </td>
       <td width="100">*pyprocessing*</td>
-      <td width="300">*Description*</td>
+      <td width="400">*Description*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/box_.html">box()</a></td>
@@ -78,11 +203,11 @@ This is still very incomplete! Browsing the reference examples in the repository
 
 == _Curves_ ==
 
-<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
     <tr>
       <td width="100">*Processing* </td>
       <td width="100">*pyprocessing*</td>
-      <td width="300">*Description*</td>
+      <td width="400">*Description*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/bezier_.html">bezier()</a></td>
@@ -136,12 +261,12 @@ a Catmull-Rom curve</td>
 </table>
 
 ==_Attributes_==
-<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
 <tbody>
     <tr>
       <td width="100">*Processing* </td>
       <td width="100">*pyprocessing*</td>
-      <td width="300">*Description*</td>
+      <td width="400">*Description*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/noSmooth_.html">noSmooth()</a></td>
@@ -177,12 +302,12 @@ a Catmull-Rom curve</td>
 </table>
 
 ==_Vertex_==
-<table border="0" cellpadding="2" cellspacing="0" width="500px">
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
 <tbody>
     <tr>
       <td width="100">*Processing* </td>
       <td width="100">*pyprocessing*</td>
-      <td width="300">*Description*</td>
+      <td width="400">*Description*</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/bezierVertex_.html">bezierVertex()</a></td>
@@ -218,63 +343,3 @@ a Catmull-Rom curve</td>
 </table>
 
 <br>
-
-= Environment =
-
-<table border="0" cellpadding="2" cellspacing="0" width="500px">
-    <tr>
-      <td width="100">*Processing* </td>
-      <td width="100">*pyprocessing*</td>
-      <td width="300">*Description*</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/cursor_.html">cursor()</a></td>
-      <td>`cursor()`</td>
-      <td>Changes or shows the mouse cursor.</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/focused.html">focused</a></td>
-      <td>N/A</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a  href="http://www.processing.org/reference/frameCount.html"> frameCount</a></td>
-      <td>`frame.count`</td>
-      <td>Number of frames drawn so far.</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/frameRate_.html">frameRate()</a></td>
-      <td>`frameRate()`</td>
-      <td>Sets the number of times `draw()` will be called per second.</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/frameRate.html">frameRate</a></td>
-      <td>`frame.rate`</td>
-      <td>Estimated number of frames per second for the recent past.</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/height.html">height</a></td>
-      <td>`canvas.height`</td>
-      <td>Height of the drawing window in pixels.</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/noCursor_.html">noCursor()</a></td>
-      <td>`noCursor()`</td>
-      <td>Inhibits the display of the mouse cursor.</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/online.html">online</a></td>
-      <td>N/A</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/screen.html">screen</a></td>
-      <td>`screen`</td>
-      <td>holds the width and height of the display.</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.processing.org/reference/width.html">width</a></td>
-      <td>`canvas.width`</td>
-      <td>width of the drawing window in pixels</td>
-    </tr>
-</table>
