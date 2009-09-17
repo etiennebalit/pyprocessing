@@ -15,8 +15,7 @@ necessarily have to follow a different naming convention in pyprocessing. When a
 global variable names in Processing is a composite word, the corresponding
 pyprocessing name is the first word followed by the remaining words in lowercase.
 For instance, Processing's `mouseX` variable is called `mouse.x` in pyprocessing. 
-The notable exceptions are `width` and `height`, which are called `canvas.width`
-and `canvas.height`, and `key`, which is equivalent to `key.char` in pyprocessing.
+The notable exception is `key`, which is equivalent to `key.char` in pyprocessing.
 
 This is still incomplete! Browsing the examples in the repository 
 will give you a more up-to-date picture of pyprocessing's features. 
@@ -122,7 +121,7 @@ automatically once by run()</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/height.html">height</a></td>
-      <td>`canvas.height`</td>
+      <td>`height`</td>
       <td>Height of the drawing window in pixels.</td>
     </tr>
     <tr>
@@ -142,7 +141,7 @@ automatically once by run()</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/width.html">width</a></td>
-      <td>`canvas.width`</td>
+      <td>`width`</td>
       <td>width of the drawing window in pixels</td>
     </tr>
 </table>
