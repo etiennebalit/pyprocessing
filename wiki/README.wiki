@@ -29,7 +29,7 @@ pyglet's sample programs, you are in good shape to run pyprocessing.
 =HOW TO INSTALL IT?=
 
 If you downloaded a source distribution, you need to put
-the pyprocessing directory (the one which contains `__init__.py`, `attribs.py,
+the pyprocessing directory (the one which contains `__init__.py`, `attribs.py`,
 etc) in any place Python expects to find modules and packages. The simplest
 way of achieving this is to run the provided setup.py program:
 
