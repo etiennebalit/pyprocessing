@@ -1,0 +1,30 @@
+#summary A discussion on double buffering as implemented by pyprocessing
+#labels Phase-Deploy
+
+== Double Buffering in OpenGL ==
+
+OpenGL, the graphics library used in pyprocessing, supports what is called "double buffering". The idea is to allow applications to draw on a hidden buffer, called the _back buffer_, and only after the drawing is finished, it shown to the user by making it the _front buffer_, i.e., the buffer that is actually shown on the screen. This process is called _flipping_ the buffers. 
+
+In most cases where a modern graphics board is supported
+by a recent driver, flipping works by copying the back to the front buffer. This is the best choice since further drawing may be done on the back buffer. Many applications
+rely on this behavior since the screen is not completely redrawn from
+scratch between one frame and the next. 
+
+Some drivers, however, do not implement flip by copying, but merely makes the 
+video controller address the other video memory buffer. This is what is called
+flipping by _swapping_. It means that whenever the window needs to be redrawn it should not assume that previous contents is still there.
+
+== Flipping in pyprocessing ==
+
+[http://www.processing.org Processing] assumes that the screen is stable, i.e., it should change only when the application explicitly draws on it. Thus, flipping by copying is OK, but flipping by swapping is NOT OK!
+
+By default, pyprocessing just uses a regular [http://www.pyglet.org pyglet] window, which is not concerned with maintaining a stable drawing surface. Since modern OpenGL implementations perform flipping by copying, this is not a problem. On those rare cases where flipping is done by swapping, pyprocessing offers alternative _flip policies_. 
+
+Currently, pyprocessing supports four flip policies controlled by four constants:
+
+ # `DOUBLE_FLIP_POLICY`: this is the default and should work for modern boards/drivers. If your application draws each frame from scratch, this will also work, even when flipping is done by swapping.
+ # `SINGLE_FLIP_POLICY`: means that no double buffering is to be used at all. This is usually a bad option since it tends to produce flickering between successive animation frames. For some boards, however, it works OK, especially if the drawing is created only once. For instance, if your pyprocessing application does not have a `draw()` function, but merely calls a few drawing functions in the main program, this should be OK.
+ # `FBO_FLIP_POLICY`: use this for modern boards/drivers where, nevertheless, flip uses swap and not copy. The idea here is that drawing actually takes place on a separate _frame buffer object (FBO)_. An FBO is an offscreen buffer which can be drawn to directly. When a flip operation is needed, the FBO is copied to the back buffer just before swapping.
+ # `ACCUM_FLIP_POLICY`: use this for cheap boards. It is horribly inefficient since it must copy buffers twice for each frame: (1) just before the flip when the contents of the back buffer are copied to the accumulation buffer, and (2) just after the flip when the accumulation buffer are restored to the back buffer.
+
+To enforce a given flip policy in an application, call `hint(`_constant_`)` just before calling `size()`,  where _constant_ is one of the above constants. If you want to change the default flip policy of the pyprocessing package, you may edit the `globs.py` source file inside the pyprocessing installation folder and alter the value of variable `flipPolicy` inside class `config`.
