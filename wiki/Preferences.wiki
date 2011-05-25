@@ -2,7 +2,7 @@
 
 = Configuration files =
 
-Pyprocessing users may set personal preferences two context levels, a global 
+Pyprocessing users may set personal preferences in two context levels, a global 
 context and a 'per user' context. 
 These preferences are stored as plain text files which can be easily changed with a text editor. Preferences are nested, meaning that you can have some preferences set globally and others in an user context which supersede the global preferences.
 
