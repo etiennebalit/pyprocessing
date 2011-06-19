@@ -8,7 +8,7 @@ These preferences are stored as plain text files which can be easily changed wit
 
 Global Context: Having more priority than the default values but less than the user's, the Global Context preferences can be stored in a globalconfig.txt file inside the pyprocessing installation folder. Notice that you must have administration privileges to modify this file.
 
-User Context: Has the highest priority and can be stored in a userconfig.txt file inside the 'homepath/.pyprocessing' folder. Like the globalconfig.txt, it isn't created by default and uses the same template. The homepath is set for C:/Users/USER_NAME on Windows and home/USER_NAME on Linux. It uses the same template as the global context, with the same possible variable names and values.
+User Context: Has the highest priority and can be stored in a file called `userconfig.txt` stored inside the _homepath_/`.pyprocessing` folder. Like the `globalconfig.txt`, it isn't created by default and uses the same template. The _homepath_ is the user's home folder, which is normally set as `C:/Users/`_USER_NAME_ on Windows and `/home/`_USER_NAME_ on Linux. It uses the same template as the global context, with the same possible variable names and values.
 
 = Configuration variables =
 
