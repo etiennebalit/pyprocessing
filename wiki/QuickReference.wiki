@@ -52,13 +52,13 @@ a frame</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/popStyle_.html">popStyle()</a></td>
-      <td> N/A</td>
-      <td></td>
+      <td> `popStyle()`</td>
+      <td> restores the prior style settings</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/pushStyle_.html">pushStyle()</a></td>
-      <td> N/A</td>
-      <td></td>
+      <td> pushStyle()</td>
+      <td> saves the current style settings</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/redraw_.html">redraw()</a></td>
@@ -100,6 +100,16 @@ automatically once by run()</td>
       <td>Changes or shows the mouse cursor.</td>
     </tr>
     <tr>
+      <td><a href="http://processing.org/reference/delay_.html">delay()</a></td>
+      <td>`delay()`</td>
+      <td> stops the program from running for a specified time</td>
+    </tr>
+    <tr>
+      <td><a href="http://processing.org/reference/day_.html">day()</a></td>
+      <td>`day()`</td>
+      <td> returns the value of the current day</td>
+    </tr>
+    <tr>
       <td><a href="http://www.processing.org/reference/focused.html">focused</a></td>
       <td>N/A</td>
       <td></td>
@@ -125,6 +135,26 @@ automatically once by run()</td>
       <td>Height of the drawing window in pixels.</td>
     </tr>
     <tr>
+      <td><a href="http://processing.org/reference/hour_.html">hour()</a></td>
+      <td>`hour()`</td>
+      <td> returns the value of the current hour</td>
+    </tr>
+    <tr>
+      <td><a href="http://processing.org/reference/millis_.html">millis()</a></td>
+      <td>`millis()`</td>
+      <td> returns the amount of milliseconds since starting a program</td>
+    </tr>
+    <tr>
+      <td><a href="http://processing.org/reference/minute_.html">minute()</a></td>
+      <td>`minute()`</td>
+      <td> returns the value of the current minute</td>
+    </tr>
+    <tr>
+      <td><a href="http://processing.org/reference/month_.html">month()</a></td>
+      <td>`month()`</td>
+      <td> returns the value of the current month</td>
+    </tr>
+    <tr>
       <td><a href="http://www.processing.org/reference/noCursor_.html">noCursor()</a></td>
       <td>`noCursor()`</td>
       <td>Inhibits the display of the mouse cursor.</td>
@@ -138,6 +168,16 @@ automatically once by run()</td>
       <td><a href="http://www.processing.org/reference/screen.html">screen</a></td>
       <td>`screen`</td>
       <td>holds the width and height of the display.</td>
+    </tr>
+    <tr>
+      <td><a href="http://processing.org/reference/second_.html">second()</a></td>
+      <td>`second()`</td>
+      <td> returns the value of the current second</td>
+    </tr>
+    <tr>
+      <td><a href="http://processing.org/reference/year_.html">year()</a></td>
+      <td>`year()`</td>
+      <td> returns the value of the current year</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/width.html">width</a></td>
@@ -636,6 +676,18 @@ transformation matrix</td>
       <td> `rotateZ()`</td>
       <td> rotates around the _z_ axis</td>
     </tr>
+
+    <tr>
+      <td><a href="http://processing.org/reference/shearX_.html">shearX()</a></td>
+      <td> `shearX()`</td>
+      <td> shears a shape around the _x_ axis</td>
+    </tr>
+    <tr>
+      <td><a href="http://processing.org/reference/shearY_.html">shearY()</a></td>
+      <td> `shearY()`</td>
+      <td> shears a shape around the _y_ axis</td>
+    </tr>
+
     <tr>
       <td><a href="http://www.processing.org/reference/scale_.html">scale()</a></td>
       <td> `scale()`</td>
@@ -844,4 +896,3 @@ coordinates</td>
     </tr>
   </tbody>
 </table>
-
