@@ -57,7 +57,7 @@ a frame</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/pushStyle_.html">pushStyle()</a></td>
-      <td> pushStyle()</td>
+      <td> `pushStyle()`</td>
       <td> saves the current style settings</td>
     </tr>
     <tr>
@@ -81,6 +81,59 @@ automatically once by run()</td>
       <td><a href="http://www.processing.org/reference/size_.html">size()</a></td>
       <td> `size()`</td>
       <td> used to establish the dimensions of the drawing window</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+=Image=
+
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/createImage_.html">createImage()</a></td>
+      <td> `createImage()`</td>
+      <td> creates an empty PImage object</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/image_.html">image()</a></td>
+      <td> `image()`</td>
+      <td> displays a PImage object</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/imageMode_.html">imageMode()</a></td>
+      <td> `imageMode()`</td>
+      <td> changes the semantics of the arguments of `image()` </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/loadImage_.html">loadImage()</a></td>
+      <td> `loadImage()`</td>
+      <td> loads an image into a PImage object</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/loadPixels_.html">loadPixels()</a></td>
+      <td> `loadPixels()`</td>
+      <td> loads the current canvas data into screen.pixels</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/updatePixels_.html">updatePixels()</a></td>
+      <td> `updatePixels()`</td>
+      <td> displays the data from screen.pixels</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/get_.html">get()</a></td>
+      <td> `get()`</td>
+      <td> returns a copy, a part of a pixel of the screen</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/set_.html">set()</a></td>
+      <td> `setScreen()`</td>
+      <td> sets a position of the screen with data</td>
     </tr>
   </tbody>
 </table>
