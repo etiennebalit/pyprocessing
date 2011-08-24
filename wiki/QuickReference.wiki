@@ -192,6 +192,13 @@ automatically once by run()</td>
       <td>`hour()`</td>
       <td> returns the value of the current hour</td>
     </tr>
+
+    <tr>
+      <td><a href="http://processing.org/reference/link_.html">link()</a></td>
+      <td>`link()`</td>
+      <td> links to a webpage</td>
+    </tr>
+
     <tr>
       <td><a href="http://processing.org/reference/millis_.html">millis()</a></td>
       <td>`millis()`</td>
@@ -220,7 +227,7 @@ automatically once by run()</td>
     <tr>
       <td><a href="http://www.processing.org/reference/screen.html">screen</a></td>
       <td>`screen`</td>
-      <td>holds the width and height of the display.</td>
+      <td>holds the width, height and pixels of the display.</td>
     </tr>
     <tr>
       <td><a href="http://processing.org/reference/second_.html">second()</a></td>
@@ -280,6 +287,16 @@ colors</td>
       <td><a href="http://www.processing.org/reference/stroke_.html">stroke()</a></td>
       <td> `stroke()`</td>
       <td> specifies the color for drawing lines and shape borders</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noTint_.html">noTint()</a></td>
+      <td> `noTint()`</td>
+      <td> reverts to displaying images with their original values</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/tint_.html">tint()</a></td>
+      <td> `tint()`</td>
+      <td> sets the fill value for displaying images</td>
     </tr>
   </tbody>
 </table>
@@ -493,6 +510,14 @@ a Catmull-Rom curve</td>
       <td> `rectMode()`</td>
       <td> changes the semantics of the arguments of `rect()`</td>
     </tr>
+
+    <tr>
+      <td><a href="http://www.processing.org/reference/ellipseMode_.html">ellipseMode()</a></td>
+      <td> `ellipseMode()`</td>
+      <td> changes the semantics of the arguments of `ellipse()`</td>
+    </tr>
+
+
     <tr>
       <td><a href="http://www.processing.org/reference/smooth_.html">smooth()</a></td>
       <td> `smooth()`</td>
@@ -671,6 +696,158 @@ a Catmull-Rom curve</td>
   </tbody>
 </table>
 <br>
+
+=Text=
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/textAlign_.html">textAlign()</a></td>
+      <td> `textAlign()`</td>
+      <td> changes the text alignment attributes</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/createFont_.html">createFont()</a></td>
+      <td> `createFont()`</td>
+      <td> creates a font</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/textFont_.html">textFont()</a></td>
+      <td> `textFont()`</td>
+      <td> sets the received font as current font</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/htmlText_.html">htmlText()</a></td>
+      <td> `htmlText()`</td>
+      <td> draws the html text at the given position</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/text_.html">text()</a></td>
+      <td> `text()`</td>
+      <td> draws the text at the given position</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/textSize_.html">textSize()</a></td>
+      <td> `textSize()`</td>
+      <td> changes the current font size</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/textWidth_.html">textWidth()</a></td>
+      <td> `textWidth()`</td>
+      <td> returns the width of the received string rendered in the current font</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/textAscent_.html">textAscent()</a></td>
+      <td> `textAscent()`</td>
+      <td> returns the ascent of the current font</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/textDescent_.html">textDescent()</a></td>
+      <td> `textDescent()`</td>
+      <td> returns the descent of the current font</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+
+
+
+
+
+
+
+=Math=
+<table border="0" cellpadding="2" cellspacing="0" width="600px">
+<tbody>
+    <tr>
+      <td width="100">*Processing* </td>
+      <td width="100">*pyprocessing*</td>
+      <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/noise_.html">noise()</a></td>
+      <td> `noise()`</td>
+      <td> returns the perlin noise value at specified coordinates</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/binary_.html">binary()</a></td>
+      <td> `binary()`</td>
+      <td> converts a value to a string in binary notation</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/hex_.html">hex()</a></td>
+      <td> `hex()`</td>
+      <td> converts a value to a string in hexadecimal notation</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/unbinary_.html">unbinary()</a></td>
+      <td> `unbinary()`</td>
+      <td> converts a string in binary notation to its decimal value</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/unhex_.html">unhex()</a></td>
+      <td> `unhex()`</td>
+      <td> converts a string in hexadecimal notation to its decimal value</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/byte_.html">byte()</a></td>
+      <td> `byte()`</td>
+      <td> converts a char or int to its byte representation</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/constrain_.html">constrain()</a></td>
+      <td> `constrain()`</td>
+      <td> returns the constrained value according to the received parameters</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/dist_.html">dist()</a></td>
+      <td> `dist()`</td>
+      <td> returns the Euclidean distance between two points</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/map_.html">map()</a></td>
+      <td> `map()`</td>
+      <td> re-maps a number from one range to another</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/mag_.html">mag()</a></td>
+      <td> `mag()`</td>
+      <td> returns the magnitude of a vector</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/lerp_.html">lerp()</a></td>
+      <td> `lerp()`</td>
+      <td> returns a interpolation between two numbers</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/sq_.html">sq()</a></td>
+      <td> `sq()`</td>
+      <td> returns the square of a value</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 =Transform=
 <table border="0" cellpadding="2" cellspacing="0" width="600px">
