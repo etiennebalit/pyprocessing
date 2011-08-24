@@ -754,13 +754,6 @@ a Catmull-Rom curve</td>
 </table>
 <br>
 
-
-
-
-
-
-
-
 =Math=
 <table border="0" cellpadding="2" cellspacing="0" width="600px">
 <tbody>
@@ -768,6 +761,11 @@ a Catmull-Rom curve</td>
       <td width="100">*Processing* </td>
       <td width="100">*pyprocessing*</td>
       <td width="400">*Description*</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/PVector.html">PVector</a></td>
+      <td> `PVector`</td>
+      <td> a class used to describe two or three dimensional vectors</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/noise_.html">noise()</a></td>
@@ -833,22 +831,6 @@ a Catmull-Rom curve</td>
 </table>
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 =Transform=
 <table border="0" cellpadding="2" cellspacing="0" width="600px">
 <tbody>
@@ -862,6 +844,12 @@ a Catmull-Rom curve</td>
       <td> `applyMatrix()`</td>
       <td> multiplies the current transformation matrix by a
 given matrix</td>
+    </tr>
+
+    <tr>
+      <td><a href="http://www.processing.org/reference/getMatrix_.html">getMatrix()</a></td>
+      <td> `getMatrix()`</td>
+      <td> returns the MODELVIEW matrix</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/popMatrix_.html">popMatrix()</a></td>
@@ -1028,6 +1016,11 @@ transformation matrix</td>
       <td><a href="http://www.processing.org/reference/printCamera_.html">printCamera()</a></td>
       <td>`printCamera()`</td>
       <td> prints the current transformation matrix</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.processing.org/reference/getProjection_.html">getProjection()</a></td>
+      <td> `getProjection()`</td>
+      <td> returns the PROJECTION matrix</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/printProjection_.html">printProjection()</a></td>
