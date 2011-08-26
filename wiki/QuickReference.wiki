@@ -101,6 +101,11 @@ automatically once by run()</td>
       <td> creates an empty PImage object</td>
     </tr>
     <tr>
+      <td><a href="http://www.processing.org/reference/filter_.html">screenFilter()</a></td>
+      <td> `filter()`</td>
+      <td> applies a filter to the display window</td>
+    </tr>
+    <tr>
       <td><a href="http://www.processing.org/reference/image_.html">image()</a></td>
       <td> `image()`</td>
       <td> displays a PImage object</td>
