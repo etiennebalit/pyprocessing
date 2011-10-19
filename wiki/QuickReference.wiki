@@ -571,13 +571,13 @@ a Catmull-Rom curve</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/texture_.html">texture()</a></td>
-      <td> N/A</td>
-      <td></td>
+      <td> `texture()`</td>
+      <td> sets a texture to be applied when drawing</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/textureMode_.html">textureMode()</a></td>
-      <td> N/A</td>
-      <td></td>
+      <td> `textureMode()`</td>
+      <td> changes how texture coordinates are evalued</td>
     </tr>
     <tr>
       <td><a href="http://www.processing.org/reference/vertex_.html">vertex()</a></td>
