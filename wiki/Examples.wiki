@@ -1,2 +1,2 @@
+#summary Short programs to highlight the features and capability of pyprocessing
 #labels Featured
-Short programs to highlight the features and capability of pyprocessing
