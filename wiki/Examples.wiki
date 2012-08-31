@@ -1,2 +1,2 @@
-#labels Phase-Requirements,Featured,Phase-Implementation
+#labels Featured
 Short programs to highlight the features and capability of pyprocessing
