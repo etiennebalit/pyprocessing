@@ -5,7 +5,7 @@
 This is an attempt to show some Animation examples with pyprocessing
 
 
-= Code Samples =
+= Code=
 {{{
 
 """
@@ -60,6 +60,3 @@ def curlicue(ddf,curlLength,stepSize,baseHue,hueRange):
 
 run()
 }}}
-
-
-_*[http://studio.sketchpad.cc/sp/pad/view/ro.9xZfpVSR1FoFb/rev.11 See it in Action]*
