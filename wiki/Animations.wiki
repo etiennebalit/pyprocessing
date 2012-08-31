@@ -1,0 +1,62 @@
+#summary Animations
+
+= Introduction =
+
+This is an attempt to show some Animation examples with pyprocessing
+
+
+= Code Samples =
+{{{
+
+"""
+   Adapted from "Chronosynclastic Curlicue Clock"
+    http://studio.sketchpad.cc/sp/pad/view/ro.9PXzsGOaaeT-z/rev.41
+
+    Originally created by Fergus Ray Murray using ProcessingJS
+"""
+
+from pyprocessing import *
+
+
+STEP_SIZE=28 # Each seed value gives a different fractal.
+DDDF=0.000000005 # dddf controls how much the fractal changes with each frame.
+START_TIME=3600*hour()+60*minute()+second() # How many seconds since midnight?
+
+def setup():
+  size (600, 600)
+  colorMode (HSB, 360)
+  background (0)
+  frameRate(15)
+
+def draw(): 
+  # We need to reset most of the variables every frame.
+  strokeWeight(2)
+ 
+  fill(0, 6)
+  stroke(255)
+  rect(0, 0, width, height)
+  # Hours
+  ddf=TWO_PI*(START_TIME+millis()/1000.0)/86400.0 
+  curlicue (ddf*1440, 9, 32.0, 0, 30) # seconds (1 rev/minute) 
+  curlicue (ddf*24, 60, 16.0, 80, 75) # minutes (1 rev/hour) 
+  curlicue (ddf, 360, 8.0, 150, 90)  # hours (1 rev/24 hours) 
+
+ 
+def curlicue(ddf,curlLength,stepSize,baseHue,hueRange):  
+  f=0.0
+  df=0.0
+  x=width/2
+  y=height/2
+  strokeWeight (stepSize/2)
+
+  for i in range(0,curlLength,1): 
+    stroke (baseHue+(float(i)/curlLength)*hueRange, 360, 360, 60)
+    f+=df
+    df+=ddf
+    x+=stepSize*sin(f)
+    y-=stepSize*cos(f)
+    point(x, y)
+    point(width-x, height-y)
+
+run()
+}}}
