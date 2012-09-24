@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pyprocessing.flippolicy</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="pyprocessing-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="pyprocessing-module.html">Package&nbsp;pyprocessing</a> ::
+        Module&nbsp;flippolicy
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pyprocessing.flippolicy-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module flippolicy</h1><p class="nomargin-top"><span class="codelink"><a href="pyprocessing.flippolicy-pysrc.html">source&nbsp;code</a></span></p>
+<p>This module contains several window classes derived from pyglet's 
+  window classes. They implement variations on the standard way of handling
+  the flip method. These are necessary because of the 
+  implementation-dependent way used by OpenGL to flip between the back and 
+  the front buffer.</p>
+  <p>In most cases where a modern graphics board is supported by a recent 
+  driver, flipping works by copying the back to the front buffer, which is 
+  necessary whenever the screen is not completely redrawn from scratch 
+  between one frame and the next. If this is the case in your installation,
+  the regular PyprocessingWindow, which is merely a pyglet.window.Window 
+  under another name, should be used and will give you the best 
+  performance.</p>
+  <p>Some drivers, however, do not implement flip by copying, but merely 
+  makes the video controller address the other video memory buffer. This is
+  what is called flipping by swapping. In such cases, programs which rely 
+  on a stable frame buffer will not work as expected. I spent a long time 
+  looking for portable ways of enforcing a copy flip, but it seems that 
+  there is no reliable way of doing that.</p>
+  <p>One way of coping with the problem is to use single buffering, so that
+  drawing is actually performed on the front buffer. This is not a good 
+  idea in general, because the drawing may result in flickering and other 
+  visual visual artifacts. Nevertheless, I found that the Intel 945 express
+  chipset works fairly well in this mode under MS Windows. Other 
+  driver/board/OS combinations might also work well in this mode. If this 
+  is the case, instancing a SingleBufferWindow will solve the problem.</p>
+  <p>Another way of providing a stable drawing buffer is to draw to a 
+  separate off-screen buffer. The most efficient way of doing this is to 
+  use a Frame Buffer Object, or FBO. The idea then is to copy the FBO to 
+  the back buffer just before the flip. The FBOWindow implements just 
+  this.</p>
+  <p>Unfortunately the FBO extension is not common in old hardware. In this
+  case, another type of buffer might be used to store a copy of the back 
+  buffer. The idea is to copy the back buffer to such an auxiliary buffer, 
+  flip and then copy it back. The simplest, but probably not the most 
+  efficient way of doing this is to use the accumulation buffer, which can 
+  be copied from/to with a single glAccum instruction. The AccumWindow 
+  implements this policy.</p>
+  <p>The default flipping policy is governed by appropriate calls to the 
+  hint() function just before calling size(). You might wish to change the 
+  default by editting the config variable in the globs submodule.</p>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Classes</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Classes"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pyprocessing.flippolicy.PyprocessingWindow-class.html" class="summary-name">PyprocessingWindow</a><br />
+      This is just a wrapper for the pyglet window class.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pyprocessing.flippolicy.FBOWindow-class.html" class="summary-name">FBOWindow</a><br />
+      This is a pyglet window where drawing in fact occurs inside a FBO.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pyprocessing.flippolicy.SingleBufferWindow-class.html" class="summary-name">SingleBufferWindow</a><br />
+      This is a pyglet window with a single buffer config.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pyprocessing.flippolicy.BackupWindow-class.html" class="summary-name">BackupWindow</a><br />
+      This is a pyglet window for which an array is used to keep the back
+        buffer contents consistent.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pyprocessing.flippolicy.AccumWindow-class.html" class="summary-name">AccumWindow</a><br />
+      This is a pyglet window for which an accumulation buffer is 
+        defined.
+    </td>
+  </tr>
+</table>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="pyprocessing-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jun 11 22:06:45 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
