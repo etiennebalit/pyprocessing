@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pyprocessing</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;pyprocessing
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pyprocessing-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PACKAGE DESCRIPTION ==================== -->
+<h1 class="epydoc">Package pyprocessing</h1><p class="nomargin-top"><span class="codelink"><a href="pyprocessing-pysrc.html">source&nbsp;code</a></span></p>
+<p>A Processing-like environment for doing graphics with Python.</p>
+  <p>Other than Python, the only requirement is pyglet, which in turn 
+  requires OpenGL.</p>
+
+<!-- ==================== SUBMODULES ==================== -->
+<a name="section-Submodules"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Submodules</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Submodules"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr><td class="summary">
+  <ul class="nomargin">
+    <li> <strong class="uidlink"><a href="pyprocessing.attribs-module.html">pyprocessing.attribs</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.colors-module.html">pyprocessing.colors</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.config-module.html">pyprocessing.config</a></strong>: <em class="summary">Holds system wide configuration options.</em>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.constants-module.html">pyprocessing.constants</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.fbo-module.html">pyprocessing.fbo</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.flippolicy-module.html">pyprocessing.flippolicy</a></strong>: <em class="summary">This module contains several window classes derived from pyglet's 
+        window classes.</em>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.fonts-module.html">pyprocessing.fonts</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.globs-module.html">pyprocessing.globs</a></strong>    </li>
+    <li> <strong class="uidlink">pyprocessing.lights</strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.lights%27-module.html">pyprocessing.lights'</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.materials-module.html">pyprocessing.materials</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.mathfunctions-module.html">pyprocessing.mathfunctions</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.pimage-module.html">pyprocessing.pimage</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.primitives-module.html">pyprocessing.primitives</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.pvector-module.html">pyprocessing.pvector</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.shapes-module.html">pyprocessing.shapes</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="pyprocessing.transformations-module.html">pyprocessing.transformations</a></strong>    </li>
+  </ul></td></tr>
+</table>
+
+<br />
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__draw"></a><span class="summary-sig-name">__draw</span>(<span class="summary-sig-arg">*args</span>)</span><br />
+      Called for every frame.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#__draw">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_close"></a><span class="summary-sig-name">on_close</span>()</span><br />
+      Called when window is closed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_close">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_mouse_press"></a><span class="summary-sig-name">on_mouse_press</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>,
+        <span class="summary-sig-arg">button</span>,
+        <span class="summary-sig-arg">modifiers</span>)</span><br />
+      Called when a mouse button is pressed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_mouse_press">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_mouse_release"></a><span class="summary-sig-name">on_mouse_release</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>,
+        <span class="summary-sig-arg">button</span>,
+        <span class="summary-sig-arg">modifiers</span>)</span><br />
+      Called when a mouse button is released.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_mouse_release">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_key_press"></a><span class="summary-sig-name">on_key_press</span>(<span class="summary-sig-arg">symbol</span>,
+        <span class="summary-sig-arg">modifiers</span>)</span><br />
+      Called when a key is pressed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_key_press">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_key_release"></a><span class="summary-sig-name">on_key_release</span>(<span class="summary-sig-arg">symbol</span>,
+        <span class="summary-sig-arg">modifiers</span>)</span><br />
+      Called when a key is released.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_key_release">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_mouse_drag"></a><span class="summary-sig-name">on_mouse_drag</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>,
+        <span class="summary-sig-arg">dx</span>,
+        <span class="summary-sig-arg">dy</span>,
+        <span class="summary-sig-arg">buttons</span>,
+        <span class="summary-sig-arg">modifiers</span>)</span><br />
+      Called when mouse is moved with at least one button pressed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_mouse_drag">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_mouse_motion"></a><span class="summary-sig-name">on_mouse_motion</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>,
+        <span class="summary-sig-arg">dx</span>,
+        <span class="summary-sig-arg">dy</span>)</span><br />
+      Called when mouse is moved with no buttons pressed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_mouse_motion">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_resize"></a><span class="summary-sig-name">on_resize</span>(<span class="summary-sig-arg">w</span>,
+        <span class="summary-sig-arg">h</span>)</span><br />
+      Called whenever the window is resized.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#on_resize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pyprocessing-module.html#cursor" class="summary-sig-name">cursor</a>(<span class="summary-sig-arg">*args</span>)</span><br />
+      Sets up the cursor type.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#cursor">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="noCursor"></a><span class="summary-sig-name">noCursor</span>()</span><br />
+      Hides the cursor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#noCursor">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="link"></a><span class="summary-sig-name">link</span>(<span class="summary-sig-arg">url</span>,
+        <span class="summary-sig-arg">target</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Links to a webpage using the default browser.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#link">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="delay"></a><span class="summary-sig-name">delay</span>(<span class="summary-sig-arg">t</span>)</span><br />
+      Stops the program for t milliseconds.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#delay">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="day"></a><span class="summary-sig-name">day</span>()</span><br />
+      Returns the current day as a value from 1 - 31</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#day">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="hour"></a><span class="summary-sig-name">hour</span>()</span><br />
+      Returns the current hour as a value from 0 - 24</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#hour">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="millis"></a><span class="summary-sig-name">millis</span>()</span><br />
+      Returns the number of milliseconds since starting the application.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#millis">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="minute"></a><span class="summary-sig-name">minute</span>()</span><br />
+      Returns the current minute as a value from 0 - 59</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#minute">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="month"></a><span class="summary-sig-name">month</span>()</span><br />
+      Returns the current month as a value from 1 - 12</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#month">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="second"></a><span class="summary-sig-name">second</span>()</span><br />
+      Returns the current second as a value from 0 - 61</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#second">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="year"></a><span class="summary-sig-name">year</span>()</span><br />
+      Returns the current year (2005, 2006, etc)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#year">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="loop"></a><span class="summary-sig-name">loop</span>()</span><br />
+      Enables the periodical refresh of the screen.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#loop">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="noLoop"></a><span class="summary-sig-name">noLoop</span>()</span><br />
+      Disables the periodical refresh of the screen.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#noLoop">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="redraw"></a><span class="summary-sig-name">redraw</span>()</span><br />
+      Signals that the 'draw()' callback should be called.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#redraw">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="frameRate"></a><span class="summary-sig-name">frameRate</span>(<span class="summary-sig-arg">rate</span>)</span><br />
+      Sets the frame rate.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#frameRate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="popStyle"></a><span class="summary-sig-name">popStyle</span>()</span><br />
+      Restores the prior drawing settings.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#popStyle">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="pushStyle"></a><span class="summary-sig-name">pushStyle</span>()</span><br />
+      Saves the current drawing settings.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#pushStyle">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pyprocessing-module.html#size" class="summary-sig-name">size</a>(<span class="summary-sig-arg">nx</span>=<span class="summary-sig-default">100</span>,
+        <span class="summary-sig-arg">ny</span>=<span class="summary-sig-default">100</span>,
+        <span class="summary-sig-arg">fullscreen</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">resizable</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">caption</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">pyprocessing</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">multisample</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Inits graphics screen with nx x ny pixels.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#size">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="run"></a><span class="summary-sig-name">run</span>()</span><br />
+      Registers callbacks and starts event loop.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pyprocessing-pysrc.html#run">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="starttime"></a><span class="summary-name">starttime</span> = <code title="1339463090.95">1339463090.95</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ADD"></a><span class="summary-name">ADD</span> = <code title="1">1</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BEVEL"></a><span class="summary-name">BEVEL</span> = <code title="'BEVEL'"><code class="variable-quote">'</code><code class="variable-string">BEVEL</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BLEND"></a><span class="summary-name">BLEND</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BURN"></a><span class="summary-name">BURN</span> = <code title="13">13</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DARKEST"></a><span class="summary-name">DARKEST</span> = <code title="3">3</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DIFFERENCE"></a><span class="summary-name">DIFFERENCE</span> = <code title="5">5</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DODGE"></a><span class="summary-name">DODGE</span> = <code title="12">12</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="EXCLUSION"></a><span class="summary-name">EXCLUSION</span> = <code title="6">6</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="HARD_LIGHT"></a><span class="summary-name">HARD_LIGHT</span> = <code title="10">10</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="IMAGE"></a><span class="summary-name">IMAGE</span> = <code title="'IMAGE'"><code class="variable-quote">'</code><code class="variable-string">IMAGE</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LIGHTEST"></a><span class="summary-name">LIGHTEST</span> = <code title="4">4</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MITER"></a><span class="summary-name">MITER</span> = <code title="'MITER'"><code class="variable-quote">'</code><code class="variable-string">MITER</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MULTIPLY"></a><span class="summary-name">MULTIPLY</span> = <code title="7">7</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="NORMALIZED"></a><span class="summary-name">NORMALIZED</span> = <code title="'NORMALIZED'"><code class="variable-quote">'</code><code class="variable-string">NORMALIZED</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="OVERLAY"></a><span class="summary-name">OVERLAY</span> = <code title="9">9</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PROJECT"></a><span class="summary-name">PROJECT</span> = <code title="'PROJECT'"><code class="variable-quote">'</code><code class="variable-string">PROJECT</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ROUND"></a><span class="summary-name">ROUND</span> = <code title="'ROUND'"><code class="variable-quote">'</code><code class="variable-string">ROUND</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SCREEN"></a><span class="summary-name">SCREEN</span> = <code title="8">8</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SOFT_LIGHT"></a><span class="summary-name">SOFT_LIGHT</span> = <code title="11">11</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SQUARE"></a><span class="summary-name">SQUARE</span> = <code title="'SQUARE'"><code class="variable-quote">'</code><code class="variable-string">SQUARE</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SUBTRACT"></a><span class="summary-name">SUBTRACT</span> = <code title="2">2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="e"></a><span class="summary-name">e</span> = <code title="2.71828182846">2.71828182846</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="pi"></a><span class="summary-name">pi</span> = <code title="3.14159265359">3.14159265359</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="cursor"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">cursor</span>(<span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pyprocessing-pysrc.html#cursor">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Sets up the cursor type. Arguments: cursor() cursor(MODE) 
+  cursor(img,x,y)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="size"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">size</span>(<span class="sig-arg">nx</span>=<span class="sig-default">100</span>,
+        <span class="sig-arg">ny</span>=<span class="sig-default">100</span>,
+        <span class="sig-arg">fullscreen</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">resizable</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">caption</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">pyprocessing</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">multisample</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pyprocessing-pysrc.html#size">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Inits graphics screen with nx x ny pixels. Caption is the window 
+  title.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jun 11 22:06:44 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
