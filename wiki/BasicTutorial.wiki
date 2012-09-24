@@ -1,3 +1,5 @@
+#summary Basic tutorial for new pyprocessing users
+
  Pyprocessing Tutorial
 
 <wiki:toc max_depth="2" />
